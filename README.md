@@ -1,46 +1,36 @@
-# shopify-starstagram
+# [shopify-starstagram](http://shopify-starstagram.herokuapp.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Why
+This web application is my submission to <b>Shopify's</b> [Frontend Intern Summer 2022 Challenge](https://docs.google.com/document/d/13zXpyrC2yGxoLXKktxw2VJG2Jw8SdUfliLM-bYQLjqE/edit#). Look to the stars with NASA's Astronmy Picture Of the Data API! Presented in a scrolling web application to peruse NASA's extensive media library.
 
-## Available Scripts
+
+## Implementation
+
+### Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start`
+Runs the react app in the development mode at [http://localhost:3000](http://localhost:3000).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `npm test`
+Launches the test runner in the interactive watch mode.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- `npm build`
+Builds the app for production to the `build` folder.
 
-### `npm test`
+### Sources
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Architected with Typescript, React, StyledComponents.
 
-### `npm run build`
+## Improvements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Accessability
+With a Google Lighthouse accessability score of 75, improvements can be made to the application user interface to address accessability concerns.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Functionality
+Due to a time constraint, a saved photos page was left out. Though, the running site logs likes into the localStorage of the browser so the user's actions persists through different sessions. Next, a page could be made to display all of the user's liked astronomical photos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://user-images.githubusercontent.com/48145854/150294862-318dadb5-d2cd-49e3-aea0-8bd3baaecf1b.png)
+![image](https://user-images.githubusercontent.com/48145854/150295117-f1f8f70b-2b9f-45db-a1d1-d59d6b3a72c8.png)
