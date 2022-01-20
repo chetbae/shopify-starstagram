@@ -3,7 +3,7 @@ const starryNightBlue = "#2B4676";
 const white = "#FFFFFF";
 const black = "#000000";
 
-const colors = {
+export const colors = {
   green: shopifyGreen,
   darkGrey: "#959595",
   mediumGrey: "#BEBEBE",
@@ -14,5 +14,3 @@ const colors = {
   white: white,
   black: black,
 };
-
-export default colors;

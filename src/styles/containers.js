@@ -34,16 +34,13 @@ const PageContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  padding-top: 160px;
+  padding-top: 50px;
   @media ${device.mobileM} {
     width: 90%;
     padding-top: 40px;
   }
   @media ${device.laptop} {
     width: 45%;
-    padding-top: 160px;
   }
 `;
 
@@ -82,11 +79,7 @@ const AboutContainer = styled.div`
 `;
 
 const CardsContainer = styled.div`
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 10vh;
+  width: 100%;
 `;
 
 const Overlap = styled.div`

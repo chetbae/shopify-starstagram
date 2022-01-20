@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { SavedManager } from '../persistance/savedManager';
 import InfiniteScroll from "react-infinite-scroll-component";
 import styled from "styled-components";
 import { typography, containers } from "../styles";
@@ -10,16 +9,9 @@ const count = 5;
 const API_KEY = "EV26Y4cjhfSwrMuIQP8xZemSgrQ24TTL6YiCkCN2";
 const nasa_api = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=${count}`
 
-
-
-
 export const HomePage = () => {
     const [error, setError] = useState<ErrorType>();
     const [items, setItems] = useState<MediaType[]>([]);
-    
-    // List of liked APODs along with crud functions
-    const savedProp: PersistanceType = SavedManager();
-    const { saved, addSaved, removeSaved, checkSaved } = savedProp;
 
     // On loading
     useEffect(() => {
@@ -45,8 +37,7 @@ export const HomePage = () => {
       return <div>Error: Somthing went wrong, {error.msg}</div>;
     } else {
       return (
-        <>
-            {saved.toString()}
+          <containers.ContentContainer>
             <InfiniteScroll
                 dataLength={items.length}
                 next={fetchMoreItems}
@@ -55,16 +46,13 @@ export const HomePage = () => {
             >
                 {items.map(item => {
                   return(
-                    <>
-                      <Card 
-                        {...item}
-                        likeHandler={addSaved}
-                      />
-                    </>
+                    <Card key={item.date}
+                      {...item}
+                    />
                   )
                 })}
             </InfiniteScroll>
-        </>
+          </containers.ContentContainer>
       );
     }
 };

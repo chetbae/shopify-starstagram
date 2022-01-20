@@ -1,21 +1,25 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-// import { SavedManager } from './persistance/savedManager';
 import {
-  HomePage
+  HomePage,
+  // SavedPage
 } from "./containers";
+import { typography, containers } from "./styles";
+
 import './App.css';
 
 function App() {
-  // const savedProp: PersistanceType = SavedManager();
+
   return (
-    <>
-      <h1>STARSTAGRAM 🌌</h1>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-        {/* <Route path="saved" element={<SavedPage {...savedProp}/>} /> */}
-      </Routes>
-    </>
+    <containers.Top30>
+      <containers.PageContainer>
+        <typography.AppTitle >Shopify Front End Developer Intern Challenge 🌌</typography.AppTitle>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {/* <Route path="saved" element={<SavedPage />} /> */}
+        </Routes>
+      </containers.PageContainer>
+  </containers.Top30>
   );
 }
 

@@ -34,25 +34,28 @@ const HeartUnliked = styled(HeartOutlined)`
     }
 `;
 
-export const LikeButton = (handleLike: () => void) => {
-    const [liked, setLiked] = useState(false);
-
+export const LikeButton = ({
+   isLiked,
+   addLiked,
+   removeLiked
+}: PersistanceType) => {
+    
     const like = () => {
-        setLiked(true);
+        addLiked();
     };
 
     const unlike = () => {
-        setLiked(false);
+        removeLiked()
     };
 
     const toggleLike = () => {
-        liked ? unlike() : like();
+        isLiked ? unlike() : like();
     };
 
     return(
         <>
             <StyledButton onClick={toggleLike}>
-                { liked ? <HeartLiked/> : <HeartUnliked/>}
+                { isLiked ? <HeartLiked/> : <HeartUnliked/>}
             </StyledButton>
         </>
     )
