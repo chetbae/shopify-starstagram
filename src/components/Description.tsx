@@ -1,7 +1,6 @@
 import { useState } from "react";
-import styled from "styled-components";
 import { CardType } from "../models";
-import { typography, containers, colors } from "../styles";
+import { typography } from "../styles";
 
 
 export const Description = ({ desc }: CardType) => {

@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import styled from "styled-components";
-import { typography, containers } from "../styles";
+import { containers } from "../styles";
 import { Card } from "../components";
-import { ErrorType, MediaType, PersistanceType } from "../models";
+import { ErrorType, MediaType } from "../models";
 
 const count = 5;
-const API_KEY = "EV26Y4cjhfSwrMuIQP8xZemSgrQ24TTL6YiCkCN2";
+const API_KEY = process.env.REACT_APP_API_KEY;
 const nasa_api = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&count=${count}`
 
 export const HomePage = () => {

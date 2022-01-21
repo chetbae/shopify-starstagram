@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { colors } from "../styles";
 import { ReactComponent as HeartFilled} from "../assets/heart_filled.svg";
 import { ReactComponent as HeartOutlined} from "../assets/heart_outlined.svg";
-import { PersistanceType, CardType } from "../models";
+import { PersistanceType } from "../models";
 
 const StyledButton = styled.button`
     width: 36px;
@@ -11,6 +10,8 @@ const StyledButton = styled.button`
     padding: 0;
     margin: 0;
     border: none;
+    background-color: transparent;
+    outline: none;
 `;
 
 const HeartLiked = styled(HeartFilled)`

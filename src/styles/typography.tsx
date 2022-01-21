@@ -59,6 +59,7 @@ const StyledDescription = styled.p`
 const ShowMore = styled.button`
     border: none;
     padding: 0;
+    background-color: transparent; 
     font-size: ${smallText};
     font-family: "Inter", sans-serif;
     text-decoration: none;

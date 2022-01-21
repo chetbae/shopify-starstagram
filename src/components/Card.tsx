@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Description, LikeButton } from ".";
 import { CardType } from "../models";
@@ -59,8 +59,8 @@ export const Card = (
                 <containers.Top8>
                     <LikeButton
                         {...likeProp}
-                    /><br/>
-                    <containers.Top8>
+                    />
+                    <containers.Top20>
                         <typography.LargeSubtitle>{title}</typography.LargeSubtitle><br/>
                         {copyright && <><i>Copyright: '{copyright}'</i><br/></>}
                         <containers.Top12>
@@ -69,9 +69,9 @@ export const Card = (
 
                             <typography.Date>{date}</typography.Date><br/>
                         </containers.Top12>
-                    </containers.Top8>
+                    </containers.Top20>
                 </containers.Top8>
-                <hr/>
+                <containers.HorizontalLine/>
             </containers.CardsContainer>
         </containers.Top60>
     );

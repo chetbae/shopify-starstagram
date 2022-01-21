@@ -7,7 +7,7 @@
 
 // const count = 5;
 // const STORAGE_KEY = "starstagram_saved"
-// const API_KEY = "Cq0u0WAbxzWO5LFhhMNhp2nnbF3DIVoMXvo2FM2W";
+// const API_KEY = process.env.REACT_APP_API_KEY;
 // const make_nasa_api = (date: string) => `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${date}`
 
 // export const SavedPage = () => {
