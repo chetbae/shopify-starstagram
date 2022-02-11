@@ -6,6 +6,10 @@ This web application is my submission to <b>Shopify's</b> [Frontend Intern Summe
 
 ## Implementation
 
+Get an API key from NASA and add it to an `.env` file:
+
+`REACT_APP_API_KEY=YOUR_API_KEY`
+
 ### Scripts
 
 In the project directory, you can run:

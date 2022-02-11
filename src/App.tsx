@@ -13,7 +13,7 @@ function App() {
   return (
     <containers.Top30>
       <containers.PageContainer>
-        <typography.AppTitle >Shopify Front End Developer Intern Challenge 🌌</typography.AppTitle>
+        <typography.AppTitle >Starstagram 🌌</typography.AppTitle>
         <Routes>
           <Route path="/" element={<HomePage />} />
           {/* <Route path="saved" element={<SavedPage />} /> */}
